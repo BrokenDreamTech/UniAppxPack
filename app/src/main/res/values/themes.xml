@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UniAppxPack" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+
+    </style>
+
+    <style name="Theme.UniAppxPack" parent="Base.Theme.UniAppxPack">
+        <!--透明状态栏-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--允许内容延伸到刘海区域-->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="27">shortEdges</item>
+    </style>
+</resources>
