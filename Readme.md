@@ -6,6 +6,10 @@
 
 ![image01](./ReadmeRes/image01.png)
 
+## 开源地址
+
+[https://github.com/BrokenDreamTech/UniAppxPack](https://github.com/BrokenDreamTech/UniAppxPack)
+
 ## 环境
 
 HBuilder X 4.85
@@ -22,6 +26,6 @@ Android Studio 2025.2.2
 
 ## 鸣谢
 
-https://doc.dcloud.net.cn/uni-app-x/native/download/android.html
+[https://doc.dcloud.net.cn/uni-app-x/native/download/android.html](https://doc.dcloud.net.cn/uni-app-x/native/download/android.html)
 
-https://doc.dcloud.net.cn/uni-app-x/native/use/android.html
+[https://doc.dcloud.net.cn/uni-app-x/native/use/android.html](https://doc.dcloud.net.cn/uni-app-x/native/use/android.html)
