@@ -1,7 +1,13 @@
 pluginManagement {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven {url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        //判断是否是CI环境
+        settings.ext.isBrokenDreamCI = System.getenv("BrokenDreamCI") != null
+        if (!settings.ext.isBrokenDreamCI){
+            println("not CI env")
+            maven { url 'https://maven.aliyun.com/repository/google' }
+            maven {url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        }
+
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -13,21 +19,27 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        flatDir { dirs('./GradlePlugins/') }
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/public' }
-        maven {url 'https://maven.aliyun.com/repository/central'}
-        maven {url 'https://maven.aliyun.com/repository/gradle-plugin'}
-        maven { url = uri("https://jitpack.io") }
+
+        //判断是否是CI环境
+        if (!settings.ext.isBrokenDreamCI){
+            println("not CI env")
+            maven { url 'https://maven.aliyun.com/repository/google' }
+            maven { url 'https://maven.aliyun.com/repository/public' }
+            maven {url 'https://maven.aliyun.com/repository/central'}
+            maven {url 'https://developer.huawei.com/repo/'}
+        }
+
+        maven { url 'https://jitpack.io' }
         google()
         mavenCentral()
-        maven {url 'https://developer.huawei.com/repo/'}
         maven {
             url 'https://mvn.getui.com/nexus/content/repositories/releases'
         }
+        flatDir { dirs('./GradlePlugins/') }
     }
 }
 
