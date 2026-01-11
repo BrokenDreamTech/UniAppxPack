@@ -63,6 +63,8 @@
     public <init>(android.content.Context, android.util.AttributeSet);
     public <init>(android.content.Context, android.util.AttributeSet, int);
 }
+# 保持我们导出的uni类不被混淆
+-keep class uni.** { *; }
 
 
 -dontwarn com.google.common.collect.ArrayListMultimap
