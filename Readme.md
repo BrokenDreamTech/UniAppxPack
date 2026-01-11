@@ -52,7 +52,7 @@ Android Studio 2025.2.2
 
 #### 视频教程
 
-传送门：TODO
+传送门：[https://www.bilibili.com/video/BV1yW6oBeEqy](https://www.bilibili.com/video/BV1yW6oBeEqy)
 
 #### 图文教程
 
@@ -68,9 +68,11 @@ Android Studio 2025.2.2
 
 5. 使用Android Studio打开"此项目",直接打包即可。
 
-   > 打包apk
+   > 打包apk，在"此项目"的根目录打开命令行，执行：
    >
-   > 在"此项目"的根目录打开命令行，执行：./gradlew assembleRelease
+   > ```
+   > gradlew assembleRelease
+   > ```
 
 ## 一键打包	(不建议使用此方案,有构建时长限制,推荐自己按教程在本地打包)
 
