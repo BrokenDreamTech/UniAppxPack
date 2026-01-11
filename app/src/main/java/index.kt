@@ -1,5 +1,5 @@
 @file:Suppress("UNCHECKED_CAST", "USELESS_CAST", "INAPPLICABLE_JVM_NAME", "UNUSED_ANONYMOUS_PARAMETER", "NAME_SHADOWING", "UNNECESSARY_NOT_NULL_ASSERTION")
-package uni.UNI3FB99C2
+package uni.UNIE9FD20E
 import io.dcloud.uniapp.*
 import io.dcloud.uniapp.extapi.*
 import io.dcloud.uniapp.framework.*
@@ -88,11 +88,11 @@ fun main(app: IApp) {
     (createApp()["app"] as VueApp).mount(app, GenUniApp())
 }
 open class UniAppConfig : io.dcloud.uniapp.appframe.AppConfig {
-    override var name: String = "Test"
-    override var appid: String = "__UNI__3FB99C2"
+    override var name: String = "UniAppXTest"
+    override var appid: String = "__UNI__E9FD20E"
     override var versionName: String = "1.0.0"
     override var versionCode: String = "100"
-    override var uniCompilerVersion: String = "4.85"
+    override var uniCompilerVersion: String = "4.87"
     constructor() : super() {}
 }
 fun definePageRoutes() {
