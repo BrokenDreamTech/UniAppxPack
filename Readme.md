@@ -4,11 +4,12 @@
 
 [![哔哩哔哩: 断梦科技 (shields.io)](https://img.shields.io/badge/哔哩哔哩-断梦科技-FF3F7B)](https://space.bilibili.com/3546827542497753) [![Github: BrokenDreamTech (shields.io)](https://img.shields.io/badge/Github-BrokenDreamTech-black)](https://github.com/BrokenDreamTech) [![Gitcode: BrokenDreamTech (shields.io)](https://img.shields.io/badge/Gitcode-BrokenDreamTech-DA203E)](https://gitcode.com/BrokenDreamTech)
 
-| 哔哩哔哩                                                     | CSDN                                                    | Github                                                 | Gitcode                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------- |
-| 视频教程：[传送门](https://space.bilibili.com/3546827542497753) | 图文教程：[传送门](https://blog.csdn.net/2402_88197112) | 源码地址：[传送门](https://github.com/BrokenDreamTech) | 源码国内加速：[传送门](https://gitcode.com/BrokenDreamTech) |
+| 哔哩哔哩                                              | CSDN                                          | Github                                       | Gitcode                                       |
+| ----------------------------------------------------- | --------------------------------------------- | -------------------------------------------- | --------------------------------------------- |
+| [传送门](https://space.bilibili.com/3546827542497753) | [传送门](https://blog.csdn.net/2402_88197112) | [传送门](https://github.com/BrokenDreamTech) | [传送门](https://gitcode.com/BrokenDreamTech) |
 
-
+> 一般CSDN会第一时间更新图文教程，后续会上传源码到Github和Gitcode上，最后再录视频教程发到哔哩哔哩，如果没时间的话可能不会录视频。
+>
 
 # Uni App X 安卓本地离线打包
 
