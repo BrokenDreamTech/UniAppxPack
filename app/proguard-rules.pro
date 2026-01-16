@@ -1,18 +1,23 @@
+-keep class uni.** { *; }
+-keep class uts.** { *; }
 -keep class io.dcloud.** { *; }
--keep class uts.sdk.** { *; }
 
 -keep class androidx.webkit.** { *; }
 
+#fastjson
 -keep class com.alibaba.fastjson.** { *; }
-
-# JSONField 注解不要丢
 -keepclassmembers class * {
     @com.alibaba.fastjson.annotation.JSONField *;
 }
 
+-keep class com.google.gson.** { *; }
+-keep class com.fasterxml.jackson.** { *; }
+
 # 保留泛型 & 注解
 -keepattributes Signature
 -keepattributes *Annotation*
+-keepattributes InnerClasses
+-keepattributes EnclosingMethod
 
 
 # 保留 Fresco 的类（需要反射）
@@ -20,6 +25,9 @@
 
 # 反射字段也需要保留
 -keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+-keep class * {
     @android.webkit.JavascriptInterface <methods>;
 }
 
@@ -43,6 +51,7 @@
 -keep public class * extends android.app.backup.BackupAgentHelper
 -keep public class * extends android.preference.Preference
 -keep public class * extends android.view.View
+-keep class * extends androidx.fragment.app.Fragment
 
 #zip4j
 -dontwarn net.lingala.zip4j.**
@@ -63,8 +72,11 @@
     public <init>(android.content.Context, android.util.AttributeSet);
     public <init>(android.content.Context, android.util.AttributeSet, int);
 }
-# 保持我们导出的uni类不被混淆
--keep class uni.** { *; }
+
+-keepclassmembers class * {
+    public <init>(...);
+    public void *(android.view.View);
+}
 
 
 -dontwarn com.google.common.collect.ArrayListMultimap
