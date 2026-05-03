@@ -37,16 +37,17 @@ Gitcode：[https://gitcode.com/BrokenDreamTech/UniAppxPack](https://gitcode.com/
 ## 特性
 
 - [x] Github Action一键打包,无需配置Android Studio配置
-- [x] 压缩混淆配置,打包"Hello" apk大小：7.7MB
-- [x] HBuilder X 4.85
+- [x] 压缩混淆配置,打包"Hello" apk大小：9.9MB
+- [x] HBuilder X 5.07
 - [x] HBuilder X 4.87
+- [x] HBuilder X 4.85
 
 
 ## 环境
 
-HBuilder X 4.87
+HBuilder X 5.07
 
-Android Studio 2025.2.2
+Android Studio 2025.3.4
 
 ## 教程
 
@@ -61,7 +62,7 @@ Android Studio 2025.2.2
 2. 因为"此项目"已有一个示例uni-app x，所以先把示例项目资源删除（不要乱删文件）：
    - 删除"此项目"的"app/src/main/assets/apps"文件夹下的所有
    - 删除"此项目"的"app/src/main/java"文件夹下的："index.kt"文件和"pages"文件夹
-   
+
 3. 将生成的"__ UNI __XXXXXX"文件夹复制到"此项目"的"app/src/main/assets/apps"文件夹下
 
 4. 将生成的"uniappx/app-android/src"文件夹下的所有东西复制粘贴到"此项目"的"app/src/main/java"文件夹下
